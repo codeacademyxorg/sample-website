@@ -1,0 +1,54 @@
+h1 {
+    font-size: 30px;
+    color: green;
+}
+
+/* #85a392 green */
+/* #f5b971 orange */
+
+header {
+    background-color: #85a392; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.myHorizontalNav {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/forest.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 400px;
+}
+
+#mainPanel h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    border: solid black 10px;
+    border-radius: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: green;
+    background: orange;
+}
