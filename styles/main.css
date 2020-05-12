@@ -1,6 +1,11 @@
 /* #85a392 green */
 /* #f5b971 orange */
 
+@font-face {
+    font-family:"Soccer";
+    src: url("../fonts/soccer.ttf");
+}
+
 header {
     background-color: #85a392; 
     padding-top: 10px;
@@ -32,7 +37,7 @@ a {
 #mainPanel h2 {
     font-size: 48px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Amatic SC";
     color: white;
     border: solid black 10px;
     border-radius: 5px;

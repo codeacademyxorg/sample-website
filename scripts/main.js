@@ -14,9 +14,9 @@ var articles = {list: [
         image: "./assets/seal.jpg"
     },
     {
-        title: "Article 3",
+        title: "Article 4",
         text: "My cool article",
-        image: "./assets/bird.jpg"
+        image: "./assets/horse.jpg"
     }
 ]};
 
