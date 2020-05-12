@@ -2,15 +2,14 @@
 <html>
     <head>
         <title>My New Website</title>
+        <link rel="shortcut icon" href="#" />
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/main.css">
     </head>
 
     <body>
 
-        <!-- El meu comentari -->
         <header>
-
             <nav>
                 <ul class="myHorizontalNav">      
                     <li><a href="index.html" >Inicio</a></li>
@@ -24,12 +23,16 @@
             <div id="mainPanel">
                 <h2>My Web</h2>
             </div>
-            <button>Click me</button>
+            <button onclick="displayWelcome()">Click me</button>
+
         </main>
 
-        <footer>
+        <section id="newsFeed">
+        </section>
 
-
-        </footer>
+        <footer/>
+        
+        <script src="scripts/jquery3-5-1.js"></script> 
+        <script type="text/javascript" src="scripts/main.js"></script>
     </body>
 </html>

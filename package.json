@@ -1,0 +1,23 @@
+{
+  "name": "website-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "eslint": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeacademyxorg/sample-website.git"
+  },
+  "author": "Jordi Vilagut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeacademyxorg/sample-website/issues"
+  },
+  "homepage": "https://github.com/codeacademyxorg/sample-website#readme"
+}
