@@ -15,7 +15,7 @@
         <header>
             <nav>
                 <ul class="myHorizontalNav">      
-                    <li><a href="index.html">HTML Básico</a></li>
+                    <li><a href="index.html" >HTML Básico</a></li>
                     <li><a href="animaciones.html">Animaciones</a></li>
                     <li><a href="autogenerado.html">Autogenerado</a></li>
                     <li><a href="listacompra.html">Lista Compra</a></li>
@@ -31,12 +31,14 @@
                 <h2>My Web</h2>
             </div>
             <div id="secondaryPanel">
-                <h1>Soy un título</h1>
-                <img src="assets/horse.jpg" height="100px"/>
-                <p>Soy un texto</p>
-                <button>Soy un botón</button>
-                <input type="text" placeholder="Soy un input box"/>
-                <h3 class="customFont">Soy una fuente importada</h3>
+                <label for="year">Any</label>
+                <input id="year" type="text"/>
+                <label for="month">Mes</label>
+                <input id="month" type="text"/>
+                <label for="day">Dia</label>
+                <input id="day" type="text"/>
+                <button onclick="calculateAge()">Calcular</button>
+                <div id="result"></div>
             </div>
         </main>
 

@@ -6,21 +6,48 @@
     src: url("../fonts/soccer.ttf");
 }
 
+body {
+    background-color: #1F5673;
+    font-family: monospace;
+}
+
+input, button {
+    font-family: monospace;
+}
+
 header {
-    background-color: #85a392; 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #232020; 
+    color: whitesmoke;
+    padding: 10px 40px;
+}
+
+footer {
+    background-color: #232020; 
+    color: whitesmoke;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    color: whitesmoke;
 }
 
 .myHorizontalNav {
     display: flex;
     justify-content: space-around;
-    width: 300px;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background-color: whitesmoke;
+    height: 100vh;
 }
 
 
@@ -39,9 +66,24 @@ a {
     font-weight: bold;
     font-family: "Amatic SC";
     color: white;
-    border: solid black 10px;
+    border: solid #232020 10px;
     border-radius: 5px;
     padding: 4px 32px;
+}
+
+#secondaryPanel {
+    padding: 10px 40px;
+}
+
+#secondaryPanel h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#secondaryPanel img {
+    border: solid whitesmoke 10px;
+    box-shadow: 2px 2px 5px black;
+    margin: 10px;
 }
 
 button {
@@ -58,6 +100,7 @@ button:hover {
 #newsFeed {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .articleImage {
@@ -81,4 +124,72 @@ button:hover {
     font-size: 10px;
     padding-top: 5px;
 }
+
+#day, #month, #year {
+    width: 40px;
+}
+
+#result {
+    border: solid black 1px;
+    margin: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#result p {
+    font-size: 46px;
+}
+
+@keyframes transicionColores {
+    0% {background-color: brown}
+    100% {background-color: blueviolet}
+}
+
+#lista {
+    border: solid black 1px;
+    height: 200px;
+    margin: 20px;
+    padding: 40px;
+}
+
+#animado {
+    border: solid black 1px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#animado h1 {
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+#animado:hover{
+    animation-name: transicionColores;
+    animation-duration: 3s;
+}
+
+#elementoLista {
+    width: 200px;
+}
+
+#lista li {
+    list-style-type: disc;
+}
+
+.customFont {
+    font-family: Soccer;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #463730;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
 

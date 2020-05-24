@@ -24,6 +24,30 @@ function displayWelcome() {
     alert("welcome!");
 }
 
+function calculateAge() {
+    
+    var birthYear = $("#year").val()
+	var birthMonth = $("#month").val()
+	var birthDay = $("#day").val()
+    
+    const currentYear = 2020
+    const currentMonth = 5 //May
+	const currentDay = 19
+    
+    
+    var age = currentYear - birthYear; //Result is 30 at this point
+    
+	if (currentMonth < birthMonth) { //true
+			age--;
+	}
+
+	if (currentMonth == birthMonth && birthDay == currentDay) { //false
+			age--;
+	} 
+    
+    $("#result").text("Tens " + age + " anys.");
+}
+
 function appendArticle(article) {
     'use strict';
 
