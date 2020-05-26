@@ -22,3 +22,4 @@ function getWeather() {
         displayData(data)
     });
 }
+
