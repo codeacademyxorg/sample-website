@@ -15,10 +15,9 @@ function displayData(data) {
         .append($("<p></p>").text("Temperatura: " + kelvinToCelsius(data.main.temp) + " graus."));
 }
 
-function getWeather() {
+function obtenerElTiempo() {
 
     $.get("http://api.openweathermap.org/data/2.5/weather?q=Barcelona,es&appid=5c6970a8066072402931cb2aa47fb136", function( data ) {
-        //alert( JSON.stringify(data));
         displayData(data)
     });
 }

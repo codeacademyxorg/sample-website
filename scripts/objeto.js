@@ -1,23 +1,19 @@
-
-
-var c = { 
-    "marca": "Ferrari",
-    "velocidadMaxima": 240,
-    "color": "Rojo",
-    "numeroDeRuedas": 4,
-    "propietario": {
-        "nombre": "Jordi",
-        "edad": 29
-    }
-}
-
 class Coche {
 
-    constructor(marca, velocidad, color, propietario) {
+    constructor(marca, velocidad, color, propietario, precio) {
         this.marca = marca;
         this.velocidad = velocidad;
         this.color = color;
         this.propietario = propietario;
+        this.precio = precio;
+    }
+
+    accelerar() {
+        this.velocidad = this.velocidad + 10;
+    }
+
+    aplicarCostesDeEnvio() {
+        this.precio = this.precio + 100;
     }
 }
 
@@ -29,12 +25,20 @@ class Propietario {
     }
 }
 
-function muestraLaMarcaDelCoche() {
-    var propietario = new Propietario("José Luis", "30");
-    var coche5 = new Coche("Renault", 50, "Amarillo", propietario);
-    alert(coche5.marca);
+var propietario = new Propietario("José Luis", 30);
+var coche = new Coche("Renault", 50, "Amarillo", propietario, 12000);
+
+function anadirExtra() {
+    $("#coche").empty();
+    coche.aplicarCostesDeEnvio();
+    mostrarDatosCoche();
 }
 
-function muestraPropietario() {
-    alert(Coche.propietario.nombre);
+function mostrarDatosCoche() {
+    $("#coche")
+        .append($("<p></p>").text("Marca: " + coche.marca))
+        .append($("<p></p>").text("Color: " + coche.color))
+        .append($("<p></p>").text("Precio final: " + coche.precio + "€"));
 }
+
+mostrarDatosCoche();
