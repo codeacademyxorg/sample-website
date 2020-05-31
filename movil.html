@@ -13,7 +13,7 @@
     <body>
 
         <header>
-            <nav>
+            <nav id="desktopNav">
                 <ul class="myHorizontalNav">      
                     <li><a href="index.html">HTML Básico</a></li>
                     <li><a href="animaciones.html">Animaciones</a></li>
@@ -26,21 +26,22 @@
                     <li><a href="movil.html">Móvil</a></li>
                 </ul>
             </nav>
+            <nav id="mobileNav">
+            </nav>
         </header>
 
-
-        <main>   
-            <button onclick="obtenerElTiempo()">Ver el tiempo</button>
-            <div id="weather"></div>
-
+        <main>
+            <div id="mainPanel">
+                <h2>My Web</h2>
+            </div>
+            <div id="secondaryPanel">
+                <section id="newsFeed">
+                </section>
+            </div>
         </main>
 
-
-        <footer>
-            <p>Soy un footer</p>
-        </footer>
-
         <script src="scripts/jquery3-5-1.js"></script> 
-        <script type="text/javascript" src="scripts/tiempo2.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/jordi.js"></script>
     </body>
 </html>
