@@ -17,7 +17,7 @@ function displayData(data) {
 
 function obtenerElTiempo() {
 
-    $.get("http://api.openweathermap.org/data/2.5/weather?q=Barcelona,es&appid=5c6970a8066072402931cb2aa47fb136", function( data ) {
+    $.get("https://api.openweathermap.org/data/2.5/weather?q=Barcelona,es&appid=5c6970a8066072402931cb2aa47fb136", function( data ) {
         displayData(data)
     });
 }
