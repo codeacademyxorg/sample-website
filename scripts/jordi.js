@@ -30,3 +30,17 @@ function anadirLista() {
     var elemento = $("#elementoLista").val();
     lista.append("<li>" + elemento + "</li>");
 }
+
+function mostrarDesplegable() {
+    
+    if( $("#desplegable").hasClass("invisible") ) {
+        
+        $("#desplegable").removeClass("invisible");
+        $("#desplegable").addClass("visible");
+        
+    } else {
+        
+        $("#desplegable").addClass("invisible");
+        $("#desplegable").remove("visible");  
+    } 
+}

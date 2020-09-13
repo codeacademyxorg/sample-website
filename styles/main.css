@@ -246,10 +246,17 @@ button:hover {
     display: none;
 }
 
+.navVertical {
+    display: none;
+}
+
+.invisible {
+    display: none;
+}
+
 @media only screen and (max-width: 450px) {
 
     header {
-        height: 40px;
     }
 
     #desktopNav {
@@ -257,5 +264,33 @@ button:hover {
     }
 
     #mobileNav {
+        display: flex;
+        justify-content: flex-end;
+        height: 40px;
     }
+
+    #mobileNav i {
+        color: white;
+        font-size: 32px;
+    }
+
+    #desplegable {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    #desplegable li {
+        padding: 4px;
+        border: solid white 0.2px;
+        text-align: center;
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    .invisible {
+        display: none;
+    }
+
 }
